@@ -18,5 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin', ['name' => 'Rifki']);
+    return view('admin', ["page" => [
+        "title" => "Dashboard",
+        "halaman" => true
+    ]]);
 });
