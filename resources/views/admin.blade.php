@@ -57,7 +57,7 @@
               </a>
             </li>
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin/buatJumlahOrderan">
                  <i class="bi bi-cart-check fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Buat Jumlah Orderan</span> 
               </a>
@@ -101,6 +101,7 @@
           @includeWhen($page['halaman'] == 2, 'admin.buatPengumuman')
           @includeWhen($page['halaman'] == 3, 'admin.tambahProduk')
           @includeWhen($page['halaman'] == 4, 'admin.aturJadwalPiket')
+          @includeWhen($page['halaman'] == 5, 'admin.buatJumlahOrderan')
         </div>
       </div>
   {{-- Akhir Bagian Utama --}}

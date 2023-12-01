@@ -44,3 +44,10 @@ Route::get('/admin/aturJadwalPiket', function () {
         "halaman" => 4
     ]]);
 });
+
+Route::get('/admin/buatJumlahOrderan', function () {
+    return view('admin', ["page" => [
+        "title" => "Buat Jumlah Orderan",
+        "halaman" => 5
+    ]]);
+});
