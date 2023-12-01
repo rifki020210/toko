@@ -7,36 +7,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/style.css') }}">
+    
+    {{-- Trix editor --}}
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+    <style>
+           trix-toolbar [data-trix-button-group="file-tools"]{
+             display: none
+           }
+    </style>
   </head>
   <body>
    <div class="row pe-0" style="width: 1378px">
    {{-- siderbar --}}
     <div class="col-2 sidebar bg-dark text-light p-3 ">
         <div class=" my-3">
-            <h1>KLS STORE</h1>
+            <h2 class="text-center mt-4">KLS STORE</h2>
         </div>
         <div class="p-3">
           <ul class="navbar-nav link-light ">
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin">
                  <i class="bi bi-speedometer2 fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Dashboard</span> 
               </a>
             </li>
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin/buatPengumuman">
                  <i class="bi bi-house-add fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Buat Pengumuman</span> 
               </a>
             </li>
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin/tambahProduk">
                  <i class="bi bi-database-add fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Tambah Produk</span> 
               </a>
             </li>
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin/aturJadwalPiket">
                  <i class="bi bi-calendar2-plus fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Atur Jadwal Piket</span> 
               </a>
@@ -88,7 +97,10 @@
     
       <div class="main mt-5">
         <div class="mt-5 container">
-          @includeWhen($page['halaman'], 'admin.dashboard')
+          @includeWhen($page['halaman'] == 1 , 'admin.dashboard')
+          @includeWhen($page['halaman'] == 2, 'admin.buatPengumuman')
+          @includeWhen($page['halaman'] == 3, 'admin.tambahProduk')
+          @includeWhen($page['halaman'] == 4, 'admin.aturJadwalPiket')
         </div>
       </div>
   {{-- Akhir Bagian Utama --}}
@@ -96,5 +108,7 @@
     
 </div>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bootstrap/js/script.js') }}"></script>
+
   </body>
 </html>
