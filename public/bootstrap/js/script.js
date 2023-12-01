@@ -17,6 +17,9 @@ const timer = setInterval(() => {
     }
 }, interval);
 // Akhir cout up
+
+// kode trix text area
 document.addEventListener("trix-file-accept", function (e) {
     e.preventDefault();
 });
+// Akhir kode trix text area
