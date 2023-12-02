@@ -51,3 +51,24 @@ Route::get('/admin/buatJumlahOrderan', function () {
         "halaman" => 5
     ]]);
 });
+
+Route::get('/admin/buatAduan', function () {
+    return view('admin', ["page" => [
+        "title" => "Buat Aduan",
+        "halaman" => 6
+    ]]);
+});
+
+Route::get('/admin/daftarAkunHalamanAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Daftar Akun",
+        "halaman" => 7
+    ]]);
+});
+
+Route::get('/admin/produkReady', function () {
+    return view('admin', ["page" => [
+        "title" => "Produk Ready",
+        "halaman" => 8
+    ]]);
+});

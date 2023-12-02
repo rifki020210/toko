@@ -63,7 +63,7 @@
               </a>
             </li>
             <li class="nav-item  d-flex align-items-center">
-              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="#">
+              <a class="text-decoration-none ps-2 link-light icon-link icon-link-hover link-opacity-50-hover "  href="/admin/buatAduan">
                  <i class="bi bi-cursor fs-4 me-2 align-middle" ></i>
                  <span class="align-middle pt-3">Buat Aduan</span> 
               </a>
@@ -74,17 +74,17 @@
     {{-- Akhir sidebar --}}
 
     {{-- Bagian Utama --}}
-    <div class="col p-0">
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     {{-- Navbar --}}
-    <nav class="navbar-kami bg-body-secondary p-3 w-100">
+    <nav class="navbar-kami bg-body-secondary p-3 w-100 rounded-5 rounded-top-0">
       <div class="d-flex">
         <div class="flex-grow-1">
-            <form class="d-flex" role="search">
+            <form class="d-flex justify-content-center" role="search">
                 <input class="form-control me-2 w-50" type="search" placeholder="Pencarian" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
               </form>
           </div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center me-4">
               <a class="text-decoration-none text-body link-dark icon-link icon-link-hover link-opacity-50-hover "  href="#">
                       <i class="bi bi-gear fs-5 me-2 mb-2 align-middle" ></i>
                       <span class="align-middle ">Pengaturan</span> 
@@ -102,6 +102,9 @@
           @includeWhen($page['halaman'] == 3, 'admin.tambahProduk')
           @includeWhen($page['halaman'] == 4, 'admin.aturJadwalPiket')
           @includeWhen($page['halaman'] == 5, 'admin.buatJumlahOrderan')
+          @includeWhen($page['halaman'] == 6, 'admin.buatAduan')
+          @includeWhen($page['halaman'] == 7, 'admin.daftarAkunAdmin')
+          @includeWhen($page['halaman'] == 8, 'admin.produkReady')
         </div>
       </div>
   {{-- Akhir Bagian Utama --}}
