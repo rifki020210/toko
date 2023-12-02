@@ -72,3 +72,17 @@ Route::get('/admin/produkReady', function () {
         "halaman" => 8
     ]]);
 });
+
+Route::get('/admin/produkKosong', function () {
+    return view('admin', ["page" => [
+        "title" => "Produk Kosong",
+        "halaman" => 9
+    ]]);
+});
+
+Route::get('/admin/produkBermasalahAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Produk Bermasalah Admin",
+        "halaman" => 10
+    ]]);
+});
