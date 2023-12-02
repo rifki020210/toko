@@ -105,6 +105,8 @@
           @includeWhen($page['halaman'] == 6, 'admin.buatAduan')
           @includeWhen($page['halaman'] == 7, 'admin.daftarAkunAdmin')
           @includeWhen($page['halaman'] == 8, 'admin.produkReady')
+          @includeWhen($page['halaman'] == 9, 'admin.produkKosong')
+          @includeWhen($page['halaman'] == 10, 'admin.produkBermasalahAdmin')
         </div>
       </div>
   {{-- Akhir Bagian Utama --}}

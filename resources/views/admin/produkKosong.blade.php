@@ -1,15 +1,13 @@
 <div class="container">
-	<h3>Produk Ready</h3>
+	<h3>Produk Kosong</h3>
     <hr class="border border-secondary border-2 opacity-50">
         <div class="d-flex justify-content-end mb-3">
             <form id="formDelete" action="/delete-selected-items" class="mt-4" method="post">
-
-             <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                 <div class="btn-group d-flex justify-content-center " role="group" aria-label="Basic example">
                     <button type="button"  class="btn btn-success " href="#" role="button">Ubah</button>
-                    <button type="button"  class="btn btn-dark " href="#" role="button">Kosong</button>
+                    <button type="button"  class="btn btn-dark " href="#" role="button">Ready</button>
                     <button type="button"  class="btn btn-danger " href="#" role="button">Hapus</button>
             </div>
-             
         </div>
     <table class="table table-hover ">
         <thead class="table-dark text-center">
@@ -33,11 +31,10 @@
             </th>
             <th scope="row">1</th>
             <td>Mark</td>
-            <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
                     <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Kosong</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button">Ready</a>
                     <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
                   </div>
             </td>
@@ -50,11 +47,10 @@
             </th>
             <th scope="row">1</th>
             <td>Mark</td>
-            <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
                     <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Kosong</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button">Ready</a>
                     <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
                   </div>
             </td>

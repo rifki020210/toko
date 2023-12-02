@@ -45,7 +45,7 @@
   </div>    
   <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
-        <a href="" class="text-decoration-none">
+        <a href="/admin/produkKosong" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Produk Kosong</h5>
             <h5 class="card-title text-dark count-up">0</h5>
@@ -56,7 +56,7 @@
   </div>    
   <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
-        <a href="" class="text-decoration-none">
+        <a href="/admin/produkBermasalahAdmin" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Produk Gagal</h5>
             <h5 class="card-title text-dark count-up">0</h5>
