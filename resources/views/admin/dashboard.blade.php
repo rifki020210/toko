@@ -10,12 +10,13 @@
           </a>
         </div>
   </div>
+  
       <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
         <a href=""  data-bs-toggle="modal" data-bs-target="#karyawanHadir" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Karyawan Hadir</h5>
-            <h5 class="card-title text-dark count-up">0</h5>
+            <h5 class="card-title text-dark count-up">500</h5>
             
           </div>
           </a>
@@ -26,7 +27,7 @@
         <a href="" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Karyawan Absen</h5>
-            <h5 class="card-title text-dark count-up">0</h5>
+            <h5 class="card-title text-dark count-up">700</h5>
             
           </div>
           </a>
@@ -67,7 +68,7 @@
   </div>    
   <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
-        <a href="" class="text-decoration-none">
+        <a href="/admin/orderanHariiniAdmin" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Orderan Hari ini</h5>
             <h5 class="card-title text-dark count-up">0</h5>
@@ -78,7 +79,7 @@
   </div>    
   <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
-        <a href="" class="text-decoration-none">
+        <a href="/admin/aduanPelangganAdmin" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Aduan Pelanggan</h5>
             <h5 class="card-title text-dark count-up">0</h5>
@@ -89,7 +90,7 @@
   </div>    
   <div class="col-3 p-0 mb-3">
       <div class="card w-75 shadow" >
-        <a href="" class="text-decoration-none">
+        <a href="/admin/aduanKaryawanAdmin" class="text-decoration-none">
           <div class="card-body text-center">
             <h5 class="card-title text-dark-emphasis">Aduan Karyawan</h5>
             <h5 class="card-title text-dark count-up">0</h5>
