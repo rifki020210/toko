@@ -20,6 +20,7 @@
     </style>
   </head>
   <body>
+    {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg bg-black bg-gradient border-bottom border-body" data-bs-theme="dark">
         <div class="container">
           <a class="navbar-brand" href="#">KLS STORE</a>
@@ -59,13 +60,40 @@
           </div>
         </div>
       </nav>
+      {{-- Akhir Navbar --}}
+
+      {{-- Utama --}}
       <div class="main mt-5">
         <div class="mt-5 container">
           @includeWhen($page['halaman'] == 15 , 'users.beranda')
         </div>
       </div>
-  {{-- Akhir Bagian Utama --}}
+      {{-- Akhir Bagian Utama --}}
    
+      {{-- Footer --}}
+      <footer class="bg-black bg-gradient text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 <a href="" class="text-decoration-none">Muhamad Rifki Rahmadi</a>. Hak Cipta Dilindungi Undang-Undang.</p>
+                </div>
+                <div class="col-md-6 text-md-end ">
+                    <ul class="list-inline ">
+                        <li class=" d-flex align-items-center">
+                          <a href="#" class="icon-link">
+                            <i class="bi bi-facebook"></i>
+                            <span>Facebook</span>
+                          </a>
+                        </li>
+                        <li class="list-inline-item"><a href="#">Tentang Kami</a></li>
+                        <li class="list-inline-item"><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+      {{-- Akhir Footer --}}
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('bootstrap/js/script.js') }}"></script>
   </body>
