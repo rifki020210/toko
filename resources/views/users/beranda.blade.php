@@ -12,9 +12,7 @@
         2 days ago
         </div>
     </div>
-   
 </div>
-
     <div class="row text-center mt-4">
         <div class="col">
             <p class="h3">Total Orderan Hari Ini <span class="badge bg-secondary">300</span></p>
@@ -23,12 +21,10 @@
             <p class="h3">Giliran Piket Hari Ini <span class="badge bg-secondary">Jajang</span></p>
         </div>
     </div>
-
-
-    <div class="row mt-5 ">
+    <div class="row mt-5 mb-5">
         <div class="col-sm-6 mb-3 mb-sm-0 " >
-            <div class="card border-success mb-3" >
-                <div class="card-header text-center bg-transparent border-success">Karyawan Hadir Hari Ini</div>
+            <div class="card shadow mb-3" >
+                <div class="card-header text-center bg-transparent">Karyawan Hadir Hari Ini</div>
                     <div class="card-body text-success">
                         <table class="table text-center">
                             <thead class="table-dark">
@@ -62,12 +58,12 @@
                             </tbody>
                           </table>
                     </div>
-                <div class="card-footer bg-transparent border-success">Footer</div>
+                <div class="card-footer bg-transparent ">Footer</div>
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="card border-success mb-3" >
-                <div class="card-header text-center bg-transparent border-success">Karyawan Tidak Hadir Hari Ini</div>
+            <div class="card shadow mb-3" >
+                <div class="card-header text-center bg-transparent">Karyawan Tidak Hadir Hari Ini</div>
                 <div class="card-body text-success">
                     <table class="table text-center">
                         <thead class="table-dark">
@@ -101,7 +97,7 @@
                         </tbody>
                       </table>
                 </div>
-                <div class="card-footer bg-transparent border-success">Footer</div>
+                <div class="card-footer bg-transparent">Footer</div>
             </div>
         </div>
     </div>

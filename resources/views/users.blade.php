@@ -74,19 +74,35 @@
       <footer class="bg-black bg-gradient text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 pt-2">
                     <p>&copy; 2023 <a href="" class="text-decoration-none">Muhamad Rifki Rahmadi</a>. Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
-                <div class="col-md-6 text-md-end ">
+                <div class="col-md-6 text-md-end pt-2">
                     <ul class="list-inline ">
-                        <li class=" d-flex align-items-center">
-                          <a href="#" class="icon-link">
+                        <li class="list-inline-item">
+                          <a href="#" class="text-light text-decoration-none">
                             <i class="bi bi-facebook"></i>
-                            <span>Facebook</span>
+                            <span class="pt-2">Facebook</span>
                           </a>
                         </li>
-                        <li class="list-inline-item"><a href="#">Tentang Kami</a></li>
-                        <li class="list-inline-item"><a href="#">Kontak</a></li>
+                        <li class="list-inline-item">
+                          <a href="#" class="text-light text-decoration-none">
+                            <i class="bi bi-whatsapp"></i>
+                            <span class="pt-2">WhatsApp</span>
+                          </a>
+                        </li>
+                          <li class="list-inline-item">
+                          <a href="#" class="text-light text-decoration-none">
+                            <i class="bi bi-github"></i>
+                            <span class="pt-2">Github</span>
+                          </a>
+                        </li>
+                          <li class="list-inline-item">
+                            <a href="#" class="text-light text-decoration-none">
+                              <i class="bi bi-youtube"></i>
+                              <span class="pt-2">Youtube</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

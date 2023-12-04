@@ -89,6 +89,7 @@ Route::get('/admin/produkBermasalahAdmin', function () {
         "title" => "Produk Bermasalah Admin",
         "halaman" => 10
     ]]);
+
 });
 
 Route::get('/admin/orderanHariiniAdmin', function () {
@@ -125,4 +126,5 @@ Route::get('/users', function () {
         "navAktif" => 1,
         "halaman" => 15
     ]]);
+
 });
