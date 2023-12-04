@@ -11,6 +11,8 @@
     {{-- Trix editor --}}
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+    {{-- Akhir Trix editor --}}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <style>
            trix-toolbar [data-trix-button-group="file-tools"]{
              display: none
@@ -77,15 +79,28 @@
     <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     {{-- Navbar --}}
     <nav class="navbar-kami bg-body-secondary p-3 w-100 rounded-5 rounded-top-0">
-      <div class="d-flex">
-        <div class="flex-grow-1">
-            <form class="d-flex justify-content-center" role="search">
-                <input class="form-control me-2 w-50" type="search" placeholder="Pencarian" aria-label="Search">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="dropdown-center me-4">
+          <a class=" text-decoration-none text-body link-dark icon-link icon-link-hover link-opacity-50-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-speedometer2 fs-5 me-2 mb-2 align-middle"></i>
+            <span class="align-middle ">Dashboard</span> 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/admin/daftarAkunHalamanAdmin">Daftar Akun <span class="badge bg-success count-up">200</span></a></li>
+            <li><a class="dropdown-item" href="/admin/produkReady">Produk Ready <span class="badge bg-success count-up">500</span></a></li>
+            <li><a class="dropdown-item" href="/admin/produkKosong">Produk Kosong <span class="badge bg-success count-up">500</span></a></li>
+            <li><a class="dropdown-item" href="/admin/produkBermasalahAdmin">Produk Bermasalah <span class="badge bg-success count-up">500</span></a></li>
+            <li><a class="dropdown-item disabled" href="/admin/orderanHariiniAdmin">Orderan Hari Ini <span class="badge bg-success count-up">500</span></a></li>
+            <li><a class="dropdown-item" href="/admin/aduanPelangganAdmin">Aduan Pelanggan <span class="badge bg-success count-up">500</span></a></li>
+            <li><a class="dropdown-item" href="/admin/aduanKaryawanAdmin">Aduan Karyawan <span class="badge bg-success count-up">500</span></a></li>
+          </ul>
+        </div>
+            <form class="d-flex w-50 ms-5" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Pencarian" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
               </form>
-          </div>
-          <div class="d-flex align-items-center me-4">
-              <a class="text-decoration-none text-body link-dark icon-link icon-link-hover link-opacity-50-hover "  href="#">
+          <div class="d-flex align-items-center justify-content-end mx-4"> 
+              <a class="text-decoration-none text-body link-dark icon-link icon-link-hover link-opacity-50-hover ms-5"  href="/admin/pengaturanAdmin">
                       <i class="bi bi-gear fs-5 me-2 mb-2 align-middle" ></i>
                       <span class="align-middle ">Pengaturan</span> 
               </a>
@@ -93,8 +108,6 @@
         </div>
       </nav>   
     {{-- Akhir Navbar --}}
-
-    
       <div class="main mt-5">
         <div class="mt-5 container">
           @includeWhen($page['halaman'] == 1 , 'admin.dashboard')
@@ -107,14 +120,17 @@
           @includeWhen($page['halaman'] == 8, 'admin.produkReady')
           @includeWhen($page['halaman'] == 9, 'admin.produkKosong')
           @includeWhen($page['halaman'] == 10, 'admin.produkBermasalahAdmin')
+
+          @includeWhen($page['halaman'] == 11, 'admin.orderanHariIniAdmin')
+          @includeWhen($page['halaman'] == 12, 'admin.aduanPelangganAdmin')
+          @includeWhen($page['halaman'] == 13, 'admin.aduanKaryawanAdmin')
+          @includeWhen($page['halaman'] == 14, 'admin.pengaturanAdmin')
         </div>
       </div>
   {{-- Akhir Bagian Utama --}}
     </div>
-    
 </div>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('bootstrap/js/script.js') }}"></script>
-
   </body>
 </html>

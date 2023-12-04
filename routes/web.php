@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('users', ["page" => [
+        "title" => "Beranda",
+        "navAktif" => 1,
+        "halaman" => 15
+    ]]);
 });
 
 
@@ -85,4 +89,42 @@ Route::get('/admin/produkBermasalahAdmin', function () {
         "title" => "Produk Bermasalah Admin",
         "halaman" => 10
     ]]);
+
+});
+
+Route::get('/admin/orderanHariiniAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Orderan Hari ini Admin",
+        "halaman" => 11
+    ]]);
+});
+
+Route::get('/admin/aduanPelangganAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Aduan Pelanggan Admin",
+        "halaman" => 12
+    ]]);
+});
+
+Route::get('/admin/aduanKaryawanAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Aduan Karyawan Admin",
+        "halaman" => 13
+    ]]);
+});
+
+Route::get('/admin/pengaturanAdmin', function () {
+    return view('admin', ["page" => [
+        "title" => "Pengaturan Admin",
+        "halaman" => 14
+    ]]);
+});
+
+Route::get('/users', function () {
+    return view('users', ["page" => [
+        "title" => "Beranda",
+        "navAktif" => 1,
+        "halaman" => 15
+    ]]);
+
 });

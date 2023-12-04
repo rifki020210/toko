@@ -1,12 +1,11 @@
 <div class="container">
-	<h3>Produk Ready</h3>
+	<h3>Aduan Pelanggan</h3>
     <hr class="border border-secondary border-2 opacity-50">
         <div class="d-flex justify-content-end mb-3">
             <form id="formDelete" action="/delete-selected-items" class="mt-4" method="post">
 
              <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
                     <button type="button"  class="btn btn-success " href="#" role="button">Ubah</button>
-                    <button type="button"  class="btn btn-dark " href="#" role="button">Kosong</button>
                     <button type="button"  class="btn btn-danger " href="#" role="button">Hapus</button>
             </div>
              
@@ -21,8 +20,9 @@
             </th>
             <th scope="col">No</th>
             <th scope="col">Nama</th>
-            <th scope="col">Kuantiti</th>
-            <th scope="col">Aksi</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Permasalahan</th>
+            <th scope="col">Opsi</th>
           </tr>
         </thead>
         <tbody class="text-center">
@@ -35,12 +35,13 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
+            <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                    <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Kosong</a>
-                    <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
-                  </div>
+                    <a class="btn btn-dark btn-sm" href="#" role="button">Selengkapnya</a>
+                   <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
+                   <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
+                 </div>
             </td>
           </tr>
          <tr>
@@ -52,12 +53,13 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
+            <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                    <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Kosong</a>
-                    <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
-                  </div>
+                    <a class="btn btn-dark btn-sm" href="#" role="button">Selengkapnya</a>
+                   <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
+                   <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
+                 </div>
             </td>
           </tr>
          
