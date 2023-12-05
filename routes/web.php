@@ -120,11 +120,26 @@ Route::get('/admin/pengaturanAdmin', function () {
     ]]);
 });
 
-Route::get('/users', function () {
+Route::get('/produkReady', function () {
     return view('users', ["page" => [
-        "title" => "Beranda",
+        "title" => "Produk Ready",
         "navAktif" => 1,
-        "halaman" => 15
+        "halaman" => 16
     ]]);
 
+
+});
+Route::get('/produkBermasalah', function () {
+    return view('users', ["page" => [
+        "title" => "Produk Bermasalah",
+        "navAktif" => 1,
+        "halaman" => 17
+    ]]);
+});
+Route::get('/aduanKaryawan', function () {
+    return view('users', ["page" => [
+        "title" => "Aduan Karyawan",
+        "navAktif" => 1,
+        "halaman" => 18
+    ]]);
 });
