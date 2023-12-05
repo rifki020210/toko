@@ -127,6 +127,7 @@ Route::get('/produkReady', function () {
         "halaman" => 16
     ]]);
 
+
 });
 Route::get('/produkBermasalah', function () {
     return view('users', ["page" => [
@@ -134,5 +135,11 @@ Route::get('/produkBermasalah', function () {
         "navAktif" => 1,
         "halaman" => 17
     ]]);
-
+});
+Route::get('/aduanKaryawan', function () {
+    return view('users', ["page" => [
+        "title" => "Aduan Karyawan",
+        "navAktif" => 1,
+        "halaman" => 18
+    ]]);
 });

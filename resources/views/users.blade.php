@@ -23,14 +23,14 @@
     {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg bg-black bg-gradient border-bottom border-body" data-bs-theme="dark">
         <div class="container">
-          <a class="navbar-brand" href="#">KLS STORE</a>
+          <a class="navbar-brand" href="/">KLS STORE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " href="#">Beranda</a>
+                <a class="nav-link " href="/">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Presensi</a>
@@ -51,11 +51,17 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Aduan Pelanggan</a></li>
-                  <li><a class="dropdown-item" href="#">Aduan Karyawan</a></li>
+                  <li><a class="dropdown-item" href="/aduanKaryawan">Aduan Karyawan</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Edit Akun</a>
+                <li class="nav-item dropdown-center">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personal
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pengaduan Saya</a></li>
+                  <li><a class="dropdown-item" href="/aduanKaryawan">Pengaturan Akun</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -64,13 +70,13 @@
       {{-- Akhir Navbar --}}
 
       {{-- Utama --}}
-      <div class="main mt-5">
         <div class="mt-5 container">
           @includeWhen($page['halaman'] == 15 , 'users.beranda')
           @includeWhen($page['halaman'] == 16 , 'users.produk')
           @includeWhen($page['halaman'] == 17 , 'users.produkBermasalah')
+           @includeWhen($page['halaman'] == 18 , 'users.aduanKaryawan')
         </div>
-      </div>
+      
       {{-- Akhir Bagian Utama --}}
    
       {{-- Footer --}}
@@ -78,6 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 pt-1">
+
                     <p>&copy; 2023 <a href="" class="text-decoration-none">Muhamad Rifki Rahmadi</a>. Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
                 <div class="col-md-6 text-md-end pt-2">
