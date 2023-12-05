@@ -40,8 +40,9 @@
                   Produk
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Produk Ready</a></li>
+                  <li><a class="dropdown-item" href="/produkReady">Produk Ready</a></li>
                   <li><a class="dropdown-item" href="#">Produk Kosong</a></li>
+                  <li><a class="dropdown-item" href="/produkBermasalah">Produk Bermasalah</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown-center">
@@ -66,6 +67,8 @@
       <div class="main mt-5">
         <div class="mt-5 container">
           @includeWhen($page['halaman'] == 15 , 'users.beranda')
+          @includeWhen($page['halaman'] == 16 , 'users.produk')
+          @includeWhen($page['halaman'] == 17 , 'users.produkBermasalah')
         </div>
       </div>
       {{-- Akhir Bagian Utama --}}
@@ -74,7 +77,7 @@
       <footer class="bg-black bg-gradient text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pt-2">
+                <div class="col-md-6 pt-1">
                     <p>&copy; 2023 <a href="" class="text-decoration-none">Muhamad Rifki Rahmadi</a>. Hak Cipta Dilindungi Undang-Undang.</p>
                 </div>
                 <div class="col-md-6 text-md-end pt-2">
