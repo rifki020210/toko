@@ -157,3 +157,24 @@ Route::get('/pengaduanSaya', function () {
         "halaman" => 20
     ]]);
 });
+Route::get('/pengaturanAkun', function () {
+    return view('users', ["page" => [
+        "title" => "Pengaturan Akun",
+        "navAktif" => 1,
+        "halaman" => 21
+    ]]);
+});
+Route::get('/daftar', function () {
+    return view('login&register', ["page" => [
+        "title" => "Daftar Akun",
+        "navAktif" => 1,
+        "halaman" => 22
+    ]]);
+});
+Route::get('/login', function () {
+    return view('login&register', ["page" => [
+        "title" => "Login",
+        "navAktif" => 1,
+        "halaman" => 23
+    ]]);
+});
