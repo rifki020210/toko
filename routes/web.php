@@ -138,8 +138,22 @@ Route::get('/produkBermasalah', function () {
 });
 Route::get('/aduanKaryawan', function () {
     return view('users', ["page" => [
-        "title" => "Aduan Karyawan",
+        "title" => "Pengaduan Karyawan",
         "navAktif" => 1,
         "halaman" => 18
+    ]]);
+});
+Route::get('/aduanPelanggan', function () {
+    return view('users', ["page" => [
+        "title" => "Pengaduan Pelanggan",
+        "navAktif" => 1,
+        "halaman" => 19
+    ]]);
+});
+Route::get('/pengaduanSaya', function () {
+    return view('users', ["page" => [
+        "title" => "Pengaduan Saya",
+        "navAktif" => 1,
+        "halaman" => 20
     ]]);
 });

@@ -9,15 +9,22 @@
 	</form>
   </div>
 
-<div class="card w-75 mb-3 mx-auto">
-    <div class="card-header">
+<div class="card w-75 mb-3 mx-auto shadow">
+    {{-- <div class="card-header">
         <h6 class="card-subtitle text-body-secondary">No</h6>
         
-      </div>
+      </div> --}}
     <div class="card-body">
-      <h5 class="card-title">Nama Produks</h5>
+      <h5 class="card-title">Nama</h5>
           <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      <h6 class="card-subtitle mb-3 text-body-secondary">Kuantiti</h6>
-      <p class="card-text">Permasalahan</p>
+      <p class="card-text mb-4">Permasalahan</p>
+      <h6>Setuju</h6>
+      <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+      </div>
+      <h6>Tidak Setuju</h6>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+      </div>
     </div>
   </div>

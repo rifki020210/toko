@@ -50,8 +50,8 @@
                   Aduan
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Aduan Pelanggan</a></li>
-                  <li><a class="dropdown-item" href="/aduanKaryawan">Aduan Karyawan</a></li>
+                  <li><a class="dropdown-item" href="/aduanPelanggan">Pengaduan Pelanggan</a></li>
+                  <li><a class="dropdown-item" href="/aduanKaryawan">Pengaduan Karyawan</a></li>
                 </ul>
               </li>
                 <li class="nav-item dropdown-center">
@@ -59,7 +59,7 @@
                   Personal
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pengaduan Saya</a></li>
+                  <li><a class="dropdown-item" href="/pengaduanSaya">Pengaduan Saya</a></li>
                   <li><a class="dropdown-item" href="/aduanKaryawan">Pengaturan Akun</a></li>
                 </ul>
               </li>
@@ -75,6 +75,8 @@
           @includeWhen($page['halaman'] == 16 , 'users.produk')
           @includeWhen($page['halaman'] == 17 , 'users.produkBermasalah')
            @includeWhen($page['halaman'] == 18 , 'users.aduanKaryawan')
+           @includeWhen($page['halaman'] == 19 , 'users.aduanPelanggan')
+           @includeWhen($page['halaman'] == 20 , 'users.pengaduanSaya')
         </div>
       
       {{-- Akhir Bagian Utama --}}
