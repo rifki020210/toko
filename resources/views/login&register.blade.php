@@ -13,71 +13,19 @@
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
     {{-- Akhir Trix editor --}}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <style>
-           trix-toolbar [data-trix-button-group="file-tools"]{
-             display: none
-           }
-    </style>
+  
   </head>
   <body>
     {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg bg-black bg-gradient border-bottom border-body" data-bs-theme="dark">
-        <div class="container">
-          <a class="navbar-brand" href="/">KLS STORE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " href="/">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Presensi</a>
-              </li>
-              <li class="nav-item dropdown-center">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Produk
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/produkReady">Produk Ready</a></li>
-                  <li><a class="dropdown-item" href="#">Produk Kosong</a></li>
-                  <li><a class="dropdown-item" href="/produkBermasalah">Produk Bermasalah</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown-center">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Aduan
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/aduanPelanggan">Pengaduan Pelanggan</a></li>
-                  <li><a class="dropdown-item" href="/aduanKaryawan">Pengaduan Karyawan</a></li>
-                </ul>
-              </li>
-                <li class="nav-item dropdown-center">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Personal
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/pengaduanSaya">Pengaduan Saya</a></li>
-                  <li><a class="dropdown-item" href="/pengaturanAkun">Pengaturan Akun</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <div class="bg-black bg-gradient h-75 p-5 text-light">
+            <h1 class="text-center">KLS SPORT</h1>
         </div>
-      </nav>
       {{-- Akhir Navbar --}}
 
       {{-- Utama --}}
-        <div class="mt-5 container">
-          @includeWhen($page['halaman'] == 15 , 'users.beranda')
-          @includeWhen($page['halaman'] == 16 , 'users.produk')
-          @includeWhen($page['halaman'] == 17 , 'users.produkBermasalah')
-           @includeWhen($page['halaman'] == 18 , 'users.aduanKaryawan')
-           @includeWhen($page['halaman'] == 19 , 'users.aduanPelanggan')
-           @includeWhen($page['halaman'] == 20 , 'users.pengaduanSaya')
-           @includeWhen($page['halaman'] == 21 , 'users.pengaturanAkun')
+        <div class=" container" style="height: 500px;">
+           @includeWhen($page['halaman'] == 22 , 'users.daftar')
+           @includeWhen($page['halaman'] == 23 , 'users.login')
         </div>
       
       {{-- Akhir Bagian Utama --}}
