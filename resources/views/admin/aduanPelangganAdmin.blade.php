@@ -38,7 +38,7 @@
             <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Selengkapnya</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button" data-bs-toggle="modal" data-bs-target="#selengkapnyaAP">Selengkapnya</a>
                    <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
                    <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
                  </div>
@@ -56,7 +56,7 @@
             <td>Otto</td>
             <td class="">
                 <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                    <a class="btn btn-dark btn-sm" href="#" role="button">Selengkapnya</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button" >Selengkapnya</a>
                    <a class="btn btn-success btn-sm" href="#" role="button">Ubah</a>
                    <a class="btn btn-danger btn-sm" href="#" role="button">Hapus</a>
                  </div>
@@ -67,4 +67,24 @@
       </table>
       </form>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="selengkapnyaAP" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Nama</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Platform
+        <hr>
+       Permasalahan
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ asset('bootstrap/js/produk.js') }}"></script>
 <script src="{{ asset('bootstrap/js/produk.js') }}"></script>

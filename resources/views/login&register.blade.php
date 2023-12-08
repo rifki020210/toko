@@ -13,7 +13,18 @@
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
     {{-- Akhir Trix editor --}}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 125vh;
+      }
+
+     .utama {
+      flex: 1;
+      
+    }
+    </style>
   </head>
   <body>
     {{-- Navbar --}}
@@ -23,7 +34,7 @@
       {{-- Akhir Navbar --}}
 
       {{-- Utama --}}
-        <div class=" container" style="height: 500px;">
+        <div class="utama container">
            @includeWhen($page['halaman'] == 22 , 'users.daftar')
            @includeWhen($page['halaman'] == 23 , 'users.login')
         </div>

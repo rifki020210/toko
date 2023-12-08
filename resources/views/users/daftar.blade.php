@@ -21,9 +21,11 @@
   	   <input type="password" class="form-control mb-3" id="konfirmasiPassword" placeholder="Konfirmasi Password" value="">
   	  <label for="konfirmasiPassword">Konfirmasi Password</label>
     </div>
-    <div class="d-flex justify-content-md-end">
-              <button type="button" class="btn btn-dark">Ke Halaman Login</button>
-              <button type="submit" class="btn btn-outline-success mt-3 ">Daftar</button>
+    <div class="d-flex justify-content-md-end mt-5">
+    <div class=" d-grid gap-2 d-md-block">
+              <a href="/login" class="btn btn-dark">Ke Halaman Login</a>
+              <button type="submit" class="btn btn-success">Daftar</button>
           </div>
+        </div>
   </form>
 </div>

@@ -12,7 +12,7 @@
     </div>
  	<div class="d-grid gap-2">
 	  <button class="btn btn-success" type="button">Login</button>
-	  <button class="btn btn-dark" type="button">Daftar</button>
+	  <a class="btn btn-dark" href="/daftar">Daftar</a>
 	</div>
     
   </form>
