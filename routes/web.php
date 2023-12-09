@@ -164,13 +164,7 @@ Route::get('/pengaturanAkun', function () {
         "halaman" => 21
     ]]);
 });
-Route::get('/daftar', function () {
-    return view('login&register', ["page" => [
-        "title" => "Daftar Akun",
-        "navAktif" => 1,
-        "halaman" => 22
-    ]]);
-});
+Route::get('/daftar', [\App\Http\Controllers\daftarController::class, 'daftar']);
 Route::get('/login', function () {
     return view('login&register', ["page" => [
         "title" => "Login",
