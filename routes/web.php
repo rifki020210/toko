@@ -165,6 +165,7 @@ Route::get('/pengaturanAkun', function () {
     ]]);
 });
 Route::get('/daftar', [\App\Http\Controllers\daftarController::class, 'daftar']);
+Route::post('/daftar', [\App\Http\Controllers\daftarController::class, 'store']);
 Route::get('/login', function () {
     return view('login&register', ["page" => [
         "title" => "Login",
