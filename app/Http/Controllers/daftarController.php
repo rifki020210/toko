@@ -36,7 +36,7 @@ class daftarController extends Controller
         $user->last_name = $rules['namaBelakang'];
         $user->status = $rules['status'];
         $user->email = $rules['email'];
-        $user->password = $rules['password'];
+        $user->password = Hash::make($rules['password']);
         $user->save();
 
         return redirect('/login');
