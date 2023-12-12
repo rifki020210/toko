@@ -61,6 +61,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/pengaduanSaya">Pengaduan Saya</a></li>
                   <li><a class="dropdown-item" href="/pengaturanAkun">Pengaturan Akun</a></li>
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
                 </ul>
               </li>
             </ul>
