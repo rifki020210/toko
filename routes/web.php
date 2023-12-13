@@ -169,7 +169,7 @@ Route::middleware([\App\Http\Middleware\AuthCheckLogin::class])->group(function(
 });
 
 
-Route::get('/daftar', [\App\Http\Controllers\daftarController::class, 'daftar']);
+Route::get('/daftar', [\App\Http\Controllers\daftarController::class, 'daftar'])->middleware('guest','redirect:/');
 Route::post('/daftar', [\App\Http\Controllers\daftarController::class, 'store']);
-Route::get('/login', [\App\Http\Controllers\loginController::class, 'index']);
+Route::get('/login', [\App\Http\Controllers\loginController::class, 'index'])->middleware('guest');
 Route::post('/login', [\App\Http\Controllers\loginController::class, 'authenticate']);
