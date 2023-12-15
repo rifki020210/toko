@@ -1,10 +1,10 @@
   <div class="card mx-auto my-5 w-50 shadow p-3">
     <div class="card-body">
       <h3 class="card-title text-center mb-4">Login</h3>
-       <form class="" method="post" action="/login">
+       <form class="" method="POST" action="/login">
         @csrf
       <div class="form-floating mb-3">
-        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Email" name="email" value="{{ old('email') }}" autocomplete="off" required>
+        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Email" name="emailDua" value="{{ old('emailDua') }}" autocomplete="off" required>
         <label for="email">Email</label>
       @error('email')
         <div class="invalid-feedback">
